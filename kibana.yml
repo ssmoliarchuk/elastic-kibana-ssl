@@ -1,0 +1,9 @@
+server.name: "kibana"
+server.host: "kibana"
+server.ssl.enabled: true
+server.ssl.certificate: /usr/share/elasticsearch/config/certificates/kibana/kibana.crt
+server.ssl.key: /usr/share/elasticsearch/config/certificates/kibana/kibana.key
+elasticsearch.hosts: ["https://es01:9200"]
+elasticsearch.username: "elastic"
+elasticsearch.ssl.certificateAuthorities: [ "/usr/share/elasticsearch/config/certificates/ca/ca.crt" ]
+elasticsearch.ssl.verificationMode: certificate

@@ -1,0 +1,4 @@
+data/*
+certs/*
+.env
+.idea/*

@@ -1,0 +1,28 @@
+version: '2.2'
+
+services:
+  es01:
+    volumes:
+      - es01-data:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+      - cluster.name=managers-control
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=password
+
+    ports:
+      - 9200:9200
+
+  kibana:
+    ports:
+      - 5601:5601
+    environment:
+      - "ELASTICSEARCH_HOSTS=http://es01:9200"
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=password
+
+volumes:
+  es01-data:
+    driver: local
