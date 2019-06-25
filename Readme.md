@@ -21,6 +21,13 @@ http://localhost:5601
 
 ## Разворачивание в проде
 [Мануал по настройке SSL/TLS/HTTPS в ELK](https://www.elastic.co/blog/configuring-ssl-tls-and-https-to-secure-elasticsearch-kibana-beats-and-logstash)
+
+* Elasticsarch
+https://localhost:9200
+
+* Kibana
+https://localhost:5601
+
 #### 1. Генерирование сертификатов для Elastic/Kibana
 
 ```bash
