@@ -44,6 +44,5 @@ $ touch .env
 #### 4. Запускаем docker-compose
 
 ```bash
-$ cd docker
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
 ```
