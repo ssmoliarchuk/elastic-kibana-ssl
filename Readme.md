@@ -10,14 +10,14 @@ http://localhost:5601
 
 ## Структура папок
 ### ./docker - файлы docker-a
-* ./docker/certs - файлы сертификатов Elastic, Kibana, CA
-* ./docker/data - волумы prod контейнеров
-* ./docker/create-certs.yml - файл генерации сертификатов поредством контейнера elasticsearch
-* ./docker/docker-compose.yml - базовый файл 
-* ./docker/docker-compose-override.yml - дев файл 
-* ./docker/docker-compose-prod.yml - прод файл
-* ./docker/kibana.yml - настройки продовской кибаны
-* ./docker/instances.yml - настройки для генерации сертификатов в проде 
+* ./certs - файлы сертификатов Elastic, Kibana, CA
+* ./data - волумы prod контейнеров
+* ./create-certs.yml - файл генерации сертификатов поредством контейнера elasticsearch
+* ./docker-compose.yml - базовый файл 
+* ./docker-compose-override.yml - дев файл 
+* ./docker-compose-prod.yml - прод файл
+* ./kibana.yml - настройки продовской кибаны
+* ./instances.yml - настройки для генерации сертификатов в проде 
 
 ## Разворачивание в проде
 [Мануал по настройке SSL/TLS/HTTPS в ELK](https://www.elastic.co/blog/configuring-ssl-tls-and-https-to-secure-elasticsearch-kibana-beats-and-logstash)
